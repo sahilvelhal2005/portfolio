@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil's Portfolio</title>
+    <link rel="stylesheet" href="portfolio4.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .navbar {
+            background-color: #0d47a1;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #90caf9;
+        }
+        .contact-icons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .contact-icons a {
+            color: #0d47a1;
+            font-size: 30px;
+            transition: transform 0.3s;
+        }
+        .contact-icons a:hover {
+            transform: scale(1.2);
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Navigation Section -->
+    <div class="navbar">
+        <a href="#hero">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact Me</a>
+        <a href="#resume">Resume</a>
+        <a href="#hobbies">Hobbies</a>
+
+
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-text">
+            <h1>Hii, I'm Sahil</h1>
+            <p>I am the student of MIT Academy of Engineering studying in frist year.
+                My branch is Computer Engineering. I love to do coding and I enjoy learning new things. </p>
+        </div>
+        <div class="hero-image">
+            <img src="sahil image.jpg" alt="Sahil's photo">
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Sahil, a passionate first-year Computer Engineering student with a strong interest in software development and technology innovation.
+            I'm currently learning web development, and I'm always excited to work on meaningful projects that solve real-world problems.
+            I enjoy building websites, exploring new tech tools, and collaborating with others on creative solutions. I'm open to internships, collaborations, and learning opportunities that help me grow as a developer.
+          </p>
+          <p><strong>Full Name:</strong> Sahil Velhal</p>
+            <p><strong>Address:</strong> Guhagar Dist: Ratnagiri</p>
+            <p><strong>Qualification:</strong> Pursuing B.Tech Degree at MIT AOE College, Alandi</p>
+            <p><strong>Email:</strong> svelhal01@gmail.com</p>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements" id="achievements">
+        <h2>My Achievements</h2>
+        <ul>
+            <li>I passed my 12th standered with 80% of marks.<a href="https://drive.google.com/file/d/19J6tWZRHQoYcdx7MjenkwGW-7tOL5bjF/view?usp=drivesdk" target="_blank">marksheet</a>
+            </li>
+            <li>I ranked 2nd in prakalp event organised by MP College of Engineering.<a href="https://drive.google.com/file/d/19PlqQDUlpEGSQ70Hih251FItme7eAFx0/view?usp=drivesdk" target="_blank">prakalp</a></li>
+            <li>I was the part of Leadership Conference held by Jindal Education Trust.<a href="https://drive.google.com/file/d/19QGbM9cnNOPpFYSyXzxmsW4dNUWQE5-3/view?usp=drivesdk" target="_blank">Conference</a>
+            </li>
+            <li>Sucessfully completed cisco python 1 course.<a href="https://drive.google.com/file/d/1WnjceJAaJogR6ydhkT37kwqrGVZDP0qt/view?usp=drive_link" target="_blank">Python 1</a></li>
+            <li>Sucessfully completed cisco python 2 course.<a href="https://drive.google.com/file/d/192ed9GHniTK3HtPn6RqTo6b_ukHwCI8-/view?usp=drive_link" target="_blank">Python 2</a></li>
+
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2>My Projects</h2>
+        <div class="project-list">
+            <p><ul>
+                <li>Curently I am working on building A human following robot.</li>
+                <li>Also I am working on a website for improving waste food management.</li>
+            </ul></p>
+        </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+<form class="contact-form">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+    <label for="number">Phone Number</label>
+    <input type="tel" id="number" name="number" placeholder="Your phone number" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Your email address" required>
+
+    <label for="address">Address</label>
+    <textarea id="address" name="address" placeholder="Your address" rows="3" required></textarea>
+
+    <button type="submit">Submit</button>
+</form>
+
+        
+    </section>
+    
+      <section class="resume" id="resume">
+        <h2>My Resume</h2>
+        <p>Follow the link to see my resume.<a href="https://drive.google.com/file/d/1mDx_UJsknooleQs9VL0Mr2Udv9Qd0OAo/view?usp=drive_link" target="_blank">resume</a>
+        </p>
+        
+    </section>
+    <section id="hobbies" class="hobbies">
+        <div class="container">
+            <h2>Hobbies</h2>
+            <div class="hobby-grid">
+                <div class="hobby-item">
+                    <i class="fas fa-music"></i>
+                    <h3>Music</h3>
+                    <p>I enjoy listening to music and playing the guitar in my free time.</p>
+                </div>
+                <div class="hobby-item">
+                    <i class="fas fa-book"></i>
+                    <h3>Reading</h3>
+                    <p>I love reading books, especially novels and tech-related articles.</p>
+                </div>
+                <div class="hobby-item">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>Gaming</h3>
+                    <p>I enjoy playing strategy and adventure games on my PC.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+          <p>&copy; 2025 Sahil Velhal | All Rights Reserved</p>
+        </div>
+      </footer>
+</body>
+</html>

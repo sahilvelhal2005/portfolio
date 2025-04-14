@@ -1,0 +1,208 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: linear-gradient(to right, #f2f2f2, #d7d7d7);
+    color: #333;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    margin-top: 40px;
+    animation: fadeInUp 1s ease-in-out;
+    color: #222;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #3f51b5, #1a237e);
+    color: white;
+    border-radius: 0 0 40px 40px;
+    padding: 80px 40px;
+}
+
+.hero-text {
+    max-width: 60%;
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.hero-image img {
+    max-height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    animation: fadeInRight 1s ease-in-out;
+}
+
+.about {
+    background: linear-gradient(to right, #aed581, #689f38);
+}
+
+.achievements {
+    background: linear-gradient(to right, #81d4fa, #0288d1);
+}
+
+.projects {
+    background: linear-gradient(to right, #ffb74d, #f57c00);
+}
+
+.resume {
+    background: linear-gradient(to right, #ce93d8, #8e24aa);
+}
+
+.hobbies {
+    background: linear-gradient(to right, #4db6ac, #00796b);
+}
+
+.contact {
+    background: linear-gradient(to right, #90caf9, #1976d2);
+}
+
+.about, .achievements, .projects, .resume, .hobbies, .contact {
+    transition: transform 0.3s ease-in-out;
+    color: white;
+}
+
+.about:hover, .achievements:hover, .projects:hover, .resume:hover, .hobbies:hover, .contact:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2 {
+    color: #fff;
+    font-weight: bold;
+}
+
+.project-list p, .about p, .achievements ul li {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.footer {
+    background: #222;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+.footer-text {
+    color: #ccc;
+}
+
+.contact-form {
+    max-width: 700px;
+    margin: 30px auto 0 auto;
+    padding: 30px;
+    background-color: #fafafa;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    animation: fadeInLeft 1s ease-in-out;
+    color: #333;
+}
+
+.contact-form label {
+    font-weight: bold;
+    font-size: 16px;
+    color: #0d47a1;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 100%;
+    transition: border 0.3s ease;
+    background-color: #f0f8ff;
+    color: #222;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #0d47a1;
+    outline: none;
+    background-color: #ffffff;
+}
+
+.contact-form button {
+    padding: 12px;
+    background: linear-gradient(to right, #1e88e5, #0d47a1);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+    transform: scale(1.05);
+    opacity: 0.95;
+}
+
+.hobby-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.hobby-item {
+    background-color: #eeeeee;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    color: #212121;
+}
+
+.hobby-item:hover {
+    transform: translateY(-5px);
+    background-color: #d7ccc8;
+}
+
+.hobby-item i {
+    font-size: 36px;
+    color: #5e35b1;
+    margin-bottom: 10px;
+}
+
+@keyframes fadeInLeft {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+    from { opacity: 0; transform: translateX(30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
